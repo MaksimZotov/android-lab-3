@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidlab3">
-        <activity android:name=".task2.Activity1" />
+
+        <activity android:name=".task2.Activity1"/>
         <activity android:name=".task2.Activity2"/>
         <activity android:name=".task2.Activity3"/>
         <activity android:name=".task2.ActivityAbout"/>
@@ -19,7 +20,14 @@
         <activity android:name=".task3.Activity3"/>
         <activity android:name=".task3.ActivityAbout"/>
 
-        <activity android:name=".task4.Activity1"
+        <activity android:name=".task4.Activity1"/>
+        <activity android:name=".task4.Activity2"/>
+        <activity android:name=".task4.Activity3"/>
+        <activity
+            android:name=".task4.ActivityAbout"
+            android:taskAffinity=".task4"/>
+
+        <activity android:name=".task5.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,11 +35,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".task4.Activity2"/>
-        <activity android:name=".task4.Activity3"/>
-        <activity
-            android:name=".task4.ActivityAbout"
-            android:taskAffinity=".task4"/>
+        <activity android:name=".task5.ActivityAbout"/>
+
     </application>
 
 </manifest>
