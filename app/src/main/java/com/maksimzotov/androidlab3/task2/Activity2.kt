@@ -32,7 +32,7 @@ class Activity2 : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == Activity3.BACK_TO_FIRST_CODE) {
+        if (requestCode == Activity3.REQUEST_CODE && resultCode == Activity3.BACK_TO_FIRST_CODE) {
             finish()
         }
     }
