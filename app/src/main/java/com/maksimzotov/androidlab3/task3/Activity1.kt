@@ -15,12 +15,12 @@ class Activity1 : AppCompatActivity() {
 
         supportActionBar?.title = "Activity 1"
 
-        viewBinding.from1To2.setOnClickListener {
+        viewBinding.bnToSecond.setOnClickListener {
             startActivity(Intent(this, Activity2::class.java))
         }
 
         viewBinding.bottomNavigationView.setOnItemSelectedListener { item ->
-            if (item.itemId == R.id.item_about) {
+            if (item.itemId == R.id.aboutActivity) {
                 startActivity(Intent(this, ActivityAbout::class.java))
             }
             return@setOnItemSelectedListener true

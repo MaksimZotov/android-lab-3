@@ -23,12 +23,10 @@ class Fragment3 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        requireActivity().setSupportActionBarTitle("Fragment 3")
-
-        viewBinding.from3To1.setOnClickListener {
+        viewBinding.bnToFirst.setOnClickListener {
             findNavController().popBackStack(R.id.fragment1, false)
         }
-        viewBinding.from3To2.setOnClickListener {
+        viewBinding.bnToSecond.setOnClickListener {
             findNavController().popBackStack()
         }
     }

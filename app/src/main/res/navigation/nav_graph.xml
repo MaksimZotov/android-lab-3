@@ -25,12 +25,10 @@
         android:name="com.maksimzotov.androidlab3.task5.Fragment3"
         android:label="Fragment3" />
 
-    <action android:id="@+id/to_about"
-        app:destination="@id/aboutActivity"/>
-
     <activity
         android:id="@+id/aboutActivity"
         android:name="com.maksimzotov.androidlab3.task5.ActivityAbout"
-        android:label="AboutActivity" />
+        android:label="AboutActivity"
+        app:action="@+id/action_about" />
 
 </navigation>

@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/from_1_to_2"
+        android:id="@+id/bnToSecond"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="to second"

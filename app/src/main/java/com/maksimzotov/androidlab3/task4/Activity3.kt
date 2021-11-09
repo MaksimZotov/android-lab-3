@@ -15,15 +15,15 @@ class Activity3 : AppCompatActivity() {
 
         supportActionBar?.title = "Activity 3"
 
-        viewBinding.from3To2.setOnClickListener {
+        viewBinding.bnToSecond.setOnClickListener {
             finish()
         }
-        viewBinding.from3To1.setOnClickListener {
+        viewBinding.bnToFirst.setOnClickListener {
             startActivity(Intent(this, Activity1::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
         }
 
         viewBinding.bottomNavigationView.setOnItemSelectedListener { item ->
-            if (item.itemId == R.id.item_about) {
+            if (item.itemId == R.id.aboutActivity) {
                 startActivity(Intent(this, ActivityAbout::class.java).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
             }
             return@setOnItemSelectedListener true
