@@ -28,14 +28,17 @@
             android:taskAffinity=".task4"/>
 
         <activity android:name=".task5.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".task5.ActivityAbout"/>
+        <activity android:name=".task5.ActivityAbout"
+            android:parentActivityName=".task5.MainActivity">
+        </activity>
 
     </application>
 
