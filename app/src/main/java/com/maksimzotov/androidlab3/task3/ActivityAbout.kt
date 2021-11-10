@@ -10,5 +10,11 @@ class ActivityAbout : AppCompatActivity() {
         setContentView(R.layout.activity_about)
 
         supportActionBar?.title = "About"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

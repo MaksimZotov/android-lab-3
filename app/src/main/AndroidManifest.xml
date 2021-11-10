@@ -11,13 +11,21 @@
         android:theme="@style/Theme.Androidlab3">
 
         <activity android:name=".task2.Activity1"/>
-        <activity android:name=".task2.Activity2"/>
-        <activity android:name=".task2.Activity3"/>
+        <activity android:name=".task2.Activity2"
+            android:parentActivityName=".task2.Activity1">
+        </activity>
+        <activity android:name=".task2.Activity3"
+            android:parentActivityName=".task2.Activity2">
+        </activity>
         <activity android:name=".task2.ActivityAbout"/>
 
         <activity android:name=".task3.Activity1"/>
-        <activity android:name=".task3.Activity2"/>
-        <activity android:name=".task3.Activity3"/>
+        <activity android:name=".task3.Activity2"
+            android:parentActivityName=".task3.Activity1">
+        </activity>
+        <activity android:name=".task3.Activity3"
+            android:parentActivityName=".task3.Activity2">
+        </activity>
         <activity android:name=".task3.ActivityAbout"/>
 
         <activity android:name=".task4.Activity1"/>
