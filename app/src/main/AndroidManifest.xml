@@ -50,13 +50,7 @@
             android:parentActivityName=".task5.MainActivity">
         </activity>
 
-        <activity android:name=".refactoring.Activity1"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".refactoring.Activity1">
         </activity>
         <activity android:name=".refactoring.Activity2"
             android:parentActivityName=".refactoring.Activity1">
